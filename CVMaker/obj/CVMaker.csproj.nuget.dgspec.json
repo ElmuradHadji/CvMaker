@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hacie\\Desktop\\CV\\CVMaker\\CVMaker\\CVMaker.csproj": {}
+    "C:\\Users\\ASUS\\Desktop\\2024\\Freelance\\CvMaker\\CVMaker\\CVMaker.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hacie\\Desktop\\CV\\CVMaker\\CVMaker\\CVMaker.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\2024\\Freelance\\CvMaker\\CVMaker\\CVMaker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hacie\\Desktop\\CV\\CVMaker\\CVMaker\\CVMaker.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\2024\\Freelance\\CvMaker\\CVMaker\\CVMaker.csproj",
         "projectName": "CVMaker",
-        "projectPath": "C:\\Users\\hacie\\Desktop\\CV\\CVMaker\\CVMaker\\CVMaker.csproj",
-        "packagesPath": "C:\\Users\\hacie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hacie\\Desktop\\CV\\CVMaker\\CVMaker\\obj\\",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\2024\\Freelance\\CvMaker\\CVMaker\\CVMaker.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\2024\\Freelance\\CvMaker\\CVMaker\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hacie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -78,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

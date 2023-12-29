@@ -3,9 +3,28 @@
     ViewData["Title"] = "Create";
 }
 
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
 
+<html>
+    <head>
+        <style>
+        .container {
+                display:flex;
+                flex-direction:row;
+                column-gap:20px;
 
+            }
+            .col{
+                border:2px solid orange;
+            }
+        </style>
+    </head>
 <body>
+    <div class="container">
+    <div class="col">
+        <h1>Something</h1>
     <form method="post" class="forms-sample">
         <div class="form-group">
         <label asp-for="@Model.Name"></label>
@@ -60,6 +79,143 @@
         <button type="submit" class="btn btn-success mr-2">Next</button>
         <button class="btn btn-dark" asp-action="Index">Go back</button>
     </form>
+    </div>
+
+    <div class="col">
+        <h1>Education</h1>
+            @*      public int Id { get; set; }
+            public string Degree { get; set; }
+            public string University { get; set; }
+            public string Profession { get; set; }
+            public DateTime StartDate { get; set; }
+            public DateTime EndDate { get; set; }
+            *@
+            
+        <form method="post" class="forms-sample">
+            <div class="form-group">
+                <label asp-for="@Model.Name"></label>
+                <input asp-for="@Model.Name">
+                <span class="text text-danger" asp-validation-for="Name"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Surname"></label>
+                <input asp-for="@Model.Surname">
+                <span class="text text-danger" asp-validation-for="Surname"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Brithday"></label>
+                <input asp-for="@Model.Brithday">
+                <span class="text text-danger" asp-validation-for="Brithday"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Email"></label>
+                <input asp-for="@Model.Email">
+                <span class="text text-danger" asp-validation-for="Email"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.PhoneNumber"></label>
+                <input asp-for="@Model.PhoneNumber">
+                <span class="text text-danger" asp-validation-for="PhoneNumber"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Town"></label>
+                <input asp-for="@Model.Town">
+                <span class="text text-danger" asp-validation-for="Town"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Insta">Instagram Url</label>
+                <input asp-for="@Model.Insta">
+                <span class="text text-danger" asp-validation-for="Insta"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Fb">Facebook Url</label>
+                <input asp-for="@Model.Fb">
+                <span class="text text-danger" asp-validation-for="Fb"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Linkedin">Linkedin Url</label>
+                <input asp-for="@Model.Linkedin">
+                <span class="text text-danger" asp-validation-for="Linkedin"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Website"></label>
+                <input asp-for="@Model.Website">
+                <span class="text text-danger" asp-validation-for="Website"></span>
+            </div>
+            <button type="submit" class="btn btn-success mr-2">Next</button>
+            <button class="btn btn-dark" asp-action="Index">Go back</button>
+        </form>
+    </div>
+
+    <div class="col">
+        <h1>Experience</h1>
+
+       @*      public int Id { get; set; }
+            public string Company { get; set; }
+            public string Position { get; set; }
+            public bool IsCurrent { get; set; }
+            public DateTime StartDate { get; set; }
+            public DateTime EndDate { get; set; } *@
+
+     
+        <form method="post" class="forms-sample">
+             
+            <div class="form-group">
+                <label asp-for="@Model.Name"></label>
+                <input asp-for="@Model.Name">
+                <span class="text text-danger" asp-validation-for="Name"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Surname"></label>
+                <input asp-for="@Model.Surname">
+                <span class="text text-danger" asp-validation-for="Surname"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Brithday"></label>
+                <input asp-for="@Model.Brithday">
+                <span class="text text-danger" asp-validation-for="Brithday"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Email"></label>
+                <input asp-for="@Model.Email">
+                <span class="text text-danger" asp-validation-for="Email"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.PhoneNumber"></label>
+                <input asp-for="@Model.PhoneNumber">
+                <span class="text text-danger" asp-validation-for="PhoneNumber"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Town"></label>
+                <input asp-for="@Model.Town">
+                <span class="text text-danger" asp-validation-for="Town"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Insta">Instagram Url</label>
+                <input asp-for="@Model.Insta">
+                <span class="text text-danger" asp-validation-for="Insta"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Fb">Facebook Url</label>
+                <input asp-for="@Model.Fb">
+                <span class="text text-danger" asp-validation-for="Fb"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Linkedin">Linkedin Url</label>
+                <input asp-for="@Model.Linkedin">
+                <span class="text text-danger" asp-validation-for="Linkedin"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Website"></label>
+                <input asp-for="@Model.Website">
+                <span class="text text-danger" asp-validation-for="Website"></span>
+            </div>
+            <button type="submit" class="btn btn-success mr-2">Next</button>
+            <button class="btn btn-dark" asp-action="Index">Go back</button>
+        </form>
+    </div>
+
+    </div>
 </body>
 
 
